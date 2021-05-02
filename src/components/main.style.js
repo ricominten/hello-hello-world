@@ -1,20 +1,14 @@
 import { css } from '@emotion/react';
 
+import * as vars from '../variables';
 import * as animation from './animations';
-
-export const lightColour = 'OldLace';
-export const darkColour = '#101c24';
-export const aboutColour= 'wheat';
-export const aboutOutlineColour = 'Peru';
-
-const animationBase = '50s ease infinite';
 
 
 export const global = css`
     body {
-        background-color: ${lightColour};
+        background-color: ${vars.lightColour};
         font-family: 'Roboto Mono', monospace;
-        animation: ${animation.background} ${animationBase}; 
+        animation: ${animation.background} ${vars.animationBase}; 
     }
 `;
 
@@ -33,7 +27,7 @@ export const before = (delayed) => css`
     line-height: 48px;
     font-family: 'Roboto', sans-serif;
     opacity: 0;
-    animation: ${animation.before(delayed)} ${animationBase};  
+    animation: ${animation.before(delayed)} ${vars.animationBase};  
 `;
 
 export const title = css`
@@ -46,10 +40,11 @@ export const title = css`
 
 export const letters = (delayed, number) => css`
     opacity: 0;
-    animation: ${animation.letters(delayed, number)} ${animationBase};
+    animation: ${animation.letters(delayed, number)} ${vars.animationBase};
 `;
 
 export const dot = css`
+    background-color: ${vars.darkColour};
     position: fixed;
     display: block;
     top:50%;
@@ -58,21 +53,21 @@ export const dot = css`
     width: 1px;
     height: 1px;
     border-radius: 50%;
-    animation: ${animation.dot} ${animationBase};    
+    animation: ${animation.dot} ${vars.animationBase}; 
 `;
 
 export const footer = css`
     position: fixed;
     right: 100px;
     bottom: 50px;
-    color: ${aboutColour};
+    color: ${vars.aboutColour};
     
     a {
-        color: ${aboutColour};
+        color: ${vars.aboutColour};
         
         &:hover,
         &: focus {
-            outline-color: ${aboutOutlineColour};
+            outline-color: ${vars.aboutOutlineColour};
         }
     }
     

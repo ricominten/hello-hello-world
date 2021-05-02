@@ -6,47 +6,29 @@ export const dot = keyframes`
     // Cycle 1 start
     ${vars.animCycleAStartState}% {
         background-color: ${vars.lightColour};
-        opacity: 1;
     }
     ${vars.toAnimCyclePercent(1, 0.01)}% {
-        background-color: ${vars.lightColour};
-        opacity: 0;
-        transform: scale(0, 0);
-    }
-    ${vars.toAnimCyclePercent(1, 15.99)}% {
         background-color: ${vars.darkColour};
-        opacity: 0;
-    }
-    ${vars.toAnimCyclePercent(1, 16)}% {
-        opacity: 1;
         transform: scale(0, 0);
-    }
-    //grow
-    ${vars.toAnimCyclePercent(1, 17)}% {
-        transform: scale(200, 200);
     }
     ${vars.toAnimCyclePercent(1, 19)}% {
         transform: scale(100, 100);
     }
-    
-    ${vars.animCycleAEndState}% {
+    ${vars.toAnimCyclePercent(1, 20)}% {
         background-color: ${vars.darkColour};
-        transform: scale(10000, 10000);
+        transform: scale(100, 100);
     }
-    
     // Cycle 2 start
     ${vars.animCycleBStartState}% {
         background-color: ${vars.darkColour};
-        opacity: 1;
+        transform: scale(0, 0);
     }
-    ${vars.toAnimCyclePercent(1, 0.01)}% {
+    
+    ${vars.toAnimCyclePercent(2, 0.01)}% {
         background-color: ${vars.lightColour};
-        opacity: 0;
-        transform: scale(0);
     }
     ${vars.animCycleBEndState}% {
         background-color: ${vars.lightColour};
-        opacity: 1;
-        transform: scale(50);
+        transform: scale(10000, 10000);
     }
 `;

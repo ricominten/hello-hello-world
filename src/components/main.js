@@ -35,7 +35,7 @@ const Main = () => (
                     <span css={styles.letters(true, 11)}>!</span>
                 </h1>
             </div>
-            {/*<div css={styles.dot} />*/}
+            <div css={styles.dot} />
         </main>
         <footer>
             <p css={styles.footer}>made by <a href="ricominten.com">ricominten.com</a></p>
