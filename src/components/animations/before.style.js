@@ -6,28 +6,28 @@ export const before = (delayed) => keyframes`
     ${vars.animCycleAStartState}% {
         opacity: 0;
     }
-    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 0.75))}% {
+    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 1))}% {
         opacity: 0;
     }
-    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 0.90))}% {
+    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 1.5))}% {
         opacity: 1;
     }
-    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 1.05))}% {
+    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 25))}% {
         opacity: 1;
     }
-    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 1.25))}% {
+    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 2.5))}% {
         opacity: 0;
     }
-    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 1.40))}% {
+    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 3))}% {
         opacity: 0;
     }
-    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 1.55))}% {
+    ${vars.toAnimCyclePercent(1, vars.getDelayTime(delayed, 3.5))}% {
         opacity: 1;
     }
-    ${vars.toAnimCyclePercent(1, vars.getDelayTime(true, -0.25))}% {
+    ${vars.toAnimCyclePercent(1, vars.getDelayTime(true, 0))}% {
         ${delayed ? '' : 'opacity: 1;'};
     }
-    ${vars.toAnimCyclePercent(1, vars.getDelayTime(true, 1.75))}% {
+    ${vars.toAnimCyclePercent(1, vars.getDelayTime(true, 2))}% {
         ${delayed ? '' : 'opacity: 0;'};
     }
     ${vars.animCycleAEndState}% {
@@ -38,28 +38,28 @@ export const before = (delayed) => keyframes`
     ${vars.animCycleBStartState}% {
         opacity: 0;
     }
-    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 0.75))}% {
+    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 1))}% {
         opacity: 0;
     }
-    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 0.90))}% {
+    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 1.5))}% {
         opacity: 1;
     }
-    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 1.05))}% {
+    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 25))}% {
         opacity: 1;
     }
-    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 1.25))}% {
+    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 2.5))}% {
         opacity: 0;
     }
-    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 1.40))}% {
+    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 3))}% {
         opacity: 0;
     }
-    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 1.55))}% {
+    ${vars.toAnimCyclePercent(2, vars.getDelayTime(delayed, 3.5))}% {
         opacity: 1;
     }
-    ${vars.toAnimCyclePercent(2, vars.getDelayTime(true, -0.25))}% {
+    ${vars.toAnimCyclePercent(2, vars.getDelayTime(true, 0))}% {
         ${delayed ? '' : 'opacity: 1;'};
     }
-    ${vars.toAnimCyclePercent(2, vars.getDelayTime(true, 1.75))}% {
+    ${vars.toAnimCyclePercent(2, vars.getDelayTime(true, 2))}% {
         ${delayed ? '' : 'opacity: 0;'};
     }
     ${vars.animCycleBEndState}% {
