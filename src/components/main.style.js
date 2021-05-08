@@ -18,6 +18,11 @@ export const titleGroup = (isTop = true) => css`
     align-items: center;
     top: ${isTop ? '100px' : '165px'};
     left: 120px;
+    
+    @media screen and (max-width: 768px) {
+        top: ${isTop ? '60px' : '105px'};
+        left: 35px;
+    }
 `;
 
 export const before = (delayed) => css`
@@ -27,7 +32,13 @@ export const before = (delayed) => css`
     line-height: 48px;
     font-family: 'Roboto', sans-serif;
     opacity: 0;
-    animation: ${animation.before(delayed)} ${vars.animationBase};  
+    animation: ${animation.before(delayed)} ${vars.animationBase};
+    
+    @media screen and (max-width: 768px) {
+        margin: 2px 25px 0 0;
+        font-size: 39px;
+        line-height: 36px;
+    }
 `;
 
 export const title = css`
@@ -36,6 +47,11 @@ export const title = css`
     margin: -2px 0 0;
     font-size: 46px;
     line-height: 46px;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 36px;
+        line-height: 36px;
+    }
 `;
 
 export const letters = (delayed, number) => css`
@@ -61,6 +77,11 @@ export const footer = css`
     right: 100px;
     bottom: 50px;
     color: ${vars.aboutColour};
+    
+    @media screen and (max-width: 768px) {
+        right: 40px;
+        bottom: 30px;
+    }
     
     a {
         color: ${vars.aboutColour};
